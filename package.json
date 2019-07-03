@@ -12,7 +12,9 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-register",
-    "browser": "gulp browser"
+    "browser": "gulp browser",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "cheerio": "^0.20.0",
@@ -20,7 +22,8 @@
     "mkdirp": "^0.5.1",
     "object-values": "^1.0.0",
     "through2": "^2.0.0",
-    "vinyl-fs": "^2.3.0"
+    "vinyl-fs": "^2.3.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "assert-html-equal": "^1.0.0",
@@ -37,5 +40,6 @@
   },
   "repository": "https://github.com/zurb/inky.git",
   "bugs": "https://github.com/zurb/inky/issues",
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
