@@ -15,12 +15,12 @@
     "browser": "gulp browser"
   },
   "dependencies": {
-    "cheerio": "^0.20.0",
+    "cheerio": "^0.22.0",
     "foundation-emails": "^2.2.0",
     "mkdirp": "^0.5.1",
     "object-values": "^1.0.0",
     "through2": "^2.0.0",
-    "vinyl-fs": "^2.3.0"
+    "vinyl-fs": "^3.0.0"
   },
   "devDependencies": {
     "assert-html-equal": "^1.0.0",
